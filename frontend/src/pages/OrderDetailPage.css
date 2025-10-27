@@ -1,0 +1,78 @@
+.chat-card {
+  padding: 1.5rem;
+}
+
+.messages-container {
+  height: 500px; /* Altura fixa para a área de mensagens */
+  overflow-y: auto; /* Adiciona scroll se as mensagens excederem a altura */
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column; /* Mensagens empilhadas verticalmente */
+}
+
+.message-bubble {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 18px;
+  margin-bottom: 10px;
+  position: relative;
+  word-wrap: break-word; /* Quebra palavras longas */
+}
+
+.message-bubble p {
+  margin: 0;
+}
+
+.message-bubble.sent {
+  background-color: var(--accent-color);
+  color: white;
+  align-self: flex-end; /* Alinha à direita */
+  border-bottom-right-radius: 4px;
+}
+
+.message-bubble.received {
+  background-color: #e5e5ea;
+  color: var(--primary-color);
+  align-self: flex-start; /* Alinha à esquerda */
+  border-bottom-left-radius: 4px;
+}
+
+.message-bubble.system {
+  background-color: #fffbe6; /* Fundo amarelo claro para mensagens do sistema */
+  color: #8a6d3b;
+  align-self: center; /* Centraliza */
+  max-width: 90%;
+  text-align: left; /* Alinha o texto à esquerda dentro da bolha */
+  font-size: 0.9rem;
+  border: 1px dashed #ffeeba;
+  white-space: pre-wrap; /* Preserva quebras de linha */
+  border-radius: 8px; /* Cantos menos arredondados */
+}
+
+.message-time {
+  font-size: 0.75rem;
+  color: #999;
+  display: block;
+  text-align: right;
+  margin-top: 5px;
+}
+.message-bubble.sent .message-time {
+  color: rgba(255, 255, 255, 0.7);
+}
+.message-bubble.system .message-time {
+   display: none; /* Esconde o tempo em mensagens do sistema */
+}
+
+
+.message-form {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.message-form input {
+  flex-grow: 1; /* Faz o input ocupar o espaço restante */
+  margin-bottom: 0;
+}

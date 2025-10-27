@@ -1,0 +1,17 @@
+# Ignora todas as pastas node_modules
+**/node_modules
+
+# Ignora todos os arquivos .env
+**/.env
+
+# Ignora logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Pasta de build do frontend (Vite)
+/frontend/dist
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
