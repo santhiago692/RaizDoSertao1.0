@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-wrapper">
+    <div class="login-container">
+      <h2>LOGIN</h2>
+      <p class="subtitle">Acesse sua conta</p>
+
+      <form action="login.php" method="POST">
+        <div class="input-group">
+          <label for="usuario">Usuário</label>
+          <div class="input-icon">
+          <i class="fa fa-user"></i>
+          <input type="text" id="usuario" name="usuario" placeholder="Digite seu e-mail" required>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="senha">Senha</label>
+          <div class="input-icon">
+          <i class="fa fa-lock"></i>
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+          </div>
+          <p class="Troca-de-senha">
+           <a href="trocar-senha.email">Esqueci minha senha</a>
+          </p>
+        </div>
+        
+
+        <input type="submit" value="Entrar" class="btn">
+
+        <p class="signup-text">
+          Não tem conta? <a href="cadastro.html">Cadastre-se</a>
+        </p>
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>

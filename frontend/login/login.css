@@ -1,0 +1,173 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-wrapper {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.login-container {
+  background: #fff;
+  border-radius: 15px;
+  padding: 5px 35px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+.login-container h2 {
+  color: #1945d7;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.3);
+}
+
+.btn {
+  transform: translateY(-2px);
+  width: 100%;
+  padding: 12px;
+  background-color: #103dce;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 5px;
+  box-shadow: 0px 10px 2opx rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #3352dd;
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 2opx rgba(0, 0, 0, 0.3);
+}
+
+.signup-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-text a {
+  color: hsl(220, 97%, 44%);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+.Troca-de-senha {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #555;
+} 
+
+.Troca-de-senha a {
+  color: hsl(220, 97%, 44%);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.Troca-de-senha a:hover {
+    text-decoration: underline;
+}
+
+.input-icon {
+  position: relative;
+}
+
+.input-icon i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  font-size: 18px;
+  pointer-events: none; /* para o ícone não atrapalhar o clique */
+}
+
+.input-icon input {
+  padding-left: 35px; /* para não sobrepor o ícone */
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 500px) {
+  .login-container {
+    padding: 30px 25px;
+    max-width: 90%;
+  }
+
+  .login-container h2 {
+    font-size: 24px;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+}
+
